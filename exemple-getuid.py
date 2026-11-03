@@ -1,5 +1,14 @@
-#! /usr/bin/env python3
-from __future__ import print_function
+#!/usr/bin/env python3
+# Developer: Hamdy Abou El Anein
+# Contact: hamdy.aea@protonmail.com
+# SPDX-License-Identifier: GPL-3.0-or-later
+"""Print the current process real and effective user IDs."""
 import os
-print("Real UID =", os.getuid(),
-    " Effective UID=" os.geteuid())
+
+
+def main() -> None:
+    print(f"Real UID={os.getuid()}, Effective UID={os.geteuid()}")
+
+
+if __name__ == "__main__":
+    main()
